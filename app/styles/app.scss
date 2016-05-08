@@ -1,1 +1,5 @@
 @import "bootstrap";
+
+table > tbody > tr {
+  cursor: pointer;
+}
