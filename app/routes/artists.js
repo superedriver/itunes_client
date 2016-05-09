@@ -6,9 +6,12 @@ export default Ember.Route.extend({
   },
 
   actions: {
-
     findAlbums(artistId) {
-      this.transitionTo('about')
+      console.log("=================================");
+      console.log("=================================");
+      console.log("=================================");
+      console.log(artistId);
+      this.transitionTo('about');
     }
   }
 });

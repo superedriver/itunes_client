@@ -6,14 +6,16 @@
         <th>№</th>
         <th>Name</th>
         <th>iTunes_Id</th>
+        <th>Albums count</th>
     </tr>
     </thead>
     <tbody>
     {{#each model as |artist index|}}
         <tr {{action 'findAlbums' artist.id}}>
-            <th>{{index}}</th>
+            <th>{{consecutive-number index}}</th>
             <td>{{artist.name}}</td>
             <td>{{artist.itunes_id}}</td>
+            <td>{{artist.albums_count}}</td>
         </tr>
     {{/each}}
     </tbody>
