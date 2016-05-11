@@ -11,7 +11,7 @@ export default Ember.Route.extend({
       console.log("=================================");
       console.log("=================================");
       console.log(artistId);
-      this.transitionTo('about');
+      this.transitionTo('artists.albums', artistId);
     }
   }
 });
