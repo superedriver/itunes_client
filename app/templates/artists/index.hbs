@@ -1,0 +1,26 @@
+<h1>Artists Page</h1>
+
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+    <tr>
+        <th>№</th>
+        <th>Name</th>
+        <th>itunesId</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each model.artists as |artist index|}}
+        <tr>
+            <th>{{index}}</th>
+            <td>{{link-to artist.name 'artists.artist' artist.id}}</td>
+            <td>{{artist.itunesId}}</td>
+        </tr>
+    {{else}}
+        <tr>
+            <th></th>
+            <td>No artists found.</td>
+            <td></td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
