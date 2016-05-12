@@ -1,0 +1,15 @@
+{{#with model.artist as |a|}}
+  <h1>{{a.name}}</h1>
+
+  <p>iTunes id: {{a.itunesId}}</p>
+
+  <p>Albums:</p>
+
+  <ul>
+    {{#each a.albums as |album|}}
+      <li>
+        {{album.name}}
+      </li>
+    {{/each}}
+  </ul>
+{{/with}}
